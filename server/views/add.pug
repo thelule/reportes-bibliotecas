@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+    div.row
+        div.col-sm-12
+            h2= title
+            form(method='POST', action="/add")
+                div.form-group
+                    label(for='reportTitle') Título del reporte:
+                    input#name.form-control(type='text', placeholder= 'Nombre del reporte', name='reportTitle')
+                div.form-group
+                    label(for='reportOp') Operador:
+                    input#name.form-control(type='text', placeholder= 'Nombre del operador', name='reportOp')
+                div.form-group
+                    label(for='reportUser') Biblioteca:
+                    input#name.form-control(type='text', placeholder= 'Nombre de la biblioteca', name='reportUser')
+                button.btn.btn-primary(type="submit") Enviar

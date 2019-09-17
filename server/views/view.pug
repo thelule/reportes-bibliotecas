@@ -1,0 +1,23 @@
+extends layout.pug
+
+block content
+    div.row
+        div.col-sm-12
+            h2= title
+            table.table.table-hover
+                thead
+                    th Report title
+                    th Report operator
+                    th Report library
+                    th Delete
+                tbody
+                    for result in data
+                        tr
+                            td #{result.reportTitle}
+                            td #{result.reportOp}
+                            td #{result.reportUser}
+                            td 
+                                a.btn.btn-warning(href='/remove/'+result.id) X
+        a.btn.btn-info(href='add') Agregar más
+        
+                                
