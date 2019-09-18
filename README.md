@@ -1,5 +1,5 @@
 # reportes-bibliotecas
-Simple app
+simpleApp
 
 Sencillo proyecto que usa como gestor de plantilla a pug con un layout básico y un procesador para leer y escribir en una base de datos mongodb
 
